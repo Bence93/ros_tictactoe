@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+    <script type="text/javascript" src="tactac.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="tic.css">
+</head>
+
+<body>
+    <h1>Simple ROS User Interface</h1>
+    <p>Connection status: <span id="status"></span></p>
+    <p>Last /txt_msg received: <span id="msg"></span></p>
+    <button onclick="publish('MEGHALSZ')">Click me</button>
+    <!DOCTYPE html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS file Included -->
+        <link rel="stylesheet" type="text/css" href="tic.css">
+
+        <!-- JavaScript file included -->
+        <script src="tic.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <h1>TIC TAC TOE</h1>
+
+            <!-- Game Instructions -->
+            <p id="ins">Game starts by just Tap on
+                box<br><br>First Player starts as
+                <b>Player X</b><br>And<br>Second
+                Player as <b>Player 0</b>
+            </p>
+
+            <br><br>
+            <!-- 3*3 grid of Boxes -->
+            <input type="text" id="b1" onclick="myfunc_3(); myfunc('b1');" readonly>
+
+            <input type="text" id="b2" onclick="myfunc_4(); myfunc('b2');" readonly>
+
+            <input type="text" id="b3" onclick="myfunc_5(); myfunc('b3');" readonly>
+            <br><br>
+
+            <input type="text" id="b4" onclick="myfunc_6(); myfunc('b4');" readonly>
+
+            <input type="text" id="b5" onclick="myfunc_7(); myfunc('b5');" readonly>
+
+            <input type="text" id="b6" onclick="myfunc_8(); myfunc('b6');" readonly>
+            <br><br>
+
+            <input type="text" id="b7" onclick="myfunc_9(); myfunc('b7');" readonly>
+
+            <input type="text" id="b8" onclick="myfunc_10();myfunc('b8');" readonly>
+
+            <input type="text" id="b9" onclick="myfunc_11();myfunc('b9');" readonly>
+
+            <!-- Grid end here -->
+            <br><br><br>
+            <!-- Button to reset game -->
+            <button id="but" onclick="myfunc_2()">
+                RESET
+            </button>
+
+            <br><br>
+            <!-- Space to show player turn -->
+            <p id="print"></p>
+        </div>
+    </body>
+
+</html>
+
+</body>
+
+</html>
